@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link  rel="icon" type="image/png" href="logo1.png">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Assets | Abdullah's Store</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#050505;
+overflow:hidden;
+color:white;
+}
+
+.glass{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.08);
+}
+
+.glow{
+position:absolute;
+width:500px;
+height:500px;
+background:#3b82f6;
+filter:blur(180px);
+opacity:.18;
+border-radius:50%;
+animation:move 10s infinite alternate ease-in-out;
+}
+
+.glow2{
+position:absolute;
+width:400px;
+height:400px;
+background:#8b5cf6;
+filter:blur(170px);
+opacity:.15;
+border-radius:50%;
+right:-100px;
+bottom:-100px;
+animation:move2 12s infinite alternate ease-in-out;
+}
+
+@keyframes move{
+from{
+transform:translate(-100px,-50px);
+}
+to{
+transform:translate(150px,120px);
+}
+}
+
+@keyframes move2{
+from{
+transform:translate(0,0);
+}
+to{
+transform:translate(-150px,-120px);
+}
+}
+
+.float{
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-18px);
+}
+
+}
+
+.fade{
+
+animation:fade 1.2s ease;
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="glow"></div>
+<div class="glow2"></div>
+
+<div class="min-h-screen flex items-center justify-center px-6">
+
+<div class="glass rounded-3xl p-12 max-w-xl w-full text-center fade">
+
+<div class="text-8xl float">
+
+🎨
+
+</div>
+
+<h1 class="text-6xl font-black mt-8">
+
+Coming Soon
+
+</h1>
+
+<p class="text-gray-400 mt-6 leading-8">
+
+We're building an amazing collection of premium Assets including graphics,
+templates, overlays, icons, fonts, sound effects and much more.
+
+Stay tuned for the next update.
+
+</p>
+
+<div class="mt-10">
+
+<a href="index.html"
+class="inline-block px-8 py-4 rounded-2xl bg-white text-black font-bold hover:scale-105 duration-300">
+
+← Back To Home
+
+</a>
+
+</div>
+
+<p class="text-gray-500 mt-8 text-sm">
+
+Abdullah's Store © 2026
+
+</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

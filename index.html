@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link  rel="icon" type="image/png" href="logo1.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Abdullah's Store</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+font-family:Poppins,sans-serif;
+}
+
+body{
+
+background:#000;
+color:#fff;
+
+}
+
+
+
+.glass{
+
+background:rgba(255,255,255,.04);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.hero{
+
+background:
+radial-gradient(circle at top right,#222,transparent 40%),
+radial-gradient(circle at bottom left,#111,transparent 40%),
+#000;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="fixed top-0 left-0 w-full glass z-50 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex items-center justify-between h-20">
+
+            <!-- Logo -->
+            <div class="flex items-center gap-4">
+                <img src="logo.png"
+                    class="w-14 h-14 rounded-full object-cover border border-white"
+                    alt="Logo">
+
+                <div>
+                    <h1 class="font-bold text-2xl">Abdullah's Store</h1>
+                    <p class="text-gray-400 text-sm">Premium Digital Marketplace</p>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden lg:flex items-center gap-10">
+
+                <li>
+                    <a href="index.html" class="hover:text-gray-300 duration-300">
+                        Home
+                    </a>
+                </li>
+
+                <!-- Categories -->
+                <li class="relative group">
+
+                    <button class="flex items-center gap-2 hover:text-gray-300 duration-300">
+
+                        Categories
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-4 h-4 group-hover:rotate-180 duration-300"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M19 9l-7 7-7-7"/>
+
+                        </svg>
+
+                    </button>
+
+                    <div class="absolute left-0 mt-5 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-3 group-hover:translate-y-0 duration-300">
+
+                        <div class="bg-black/95 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden">
+
+                            <a href="courses.html" class="flex items-center gap-4 px-6 py-4 hover:bg-white hover:text-black transition">
+
+                                <span class="text-2xl">📚</span>
+
+                                <div>
+                                    <h3 class="font-semibold">Courses</h3>
+                                    <p class="text-xs text-gray-400">Premium Learning Collection</p>
+                                </div>
+
+                            </a>
+
+                            <a href="reels.html" class="flex items-center gap-4 px-6 py-4 hover:bg-white hover:text-black transition">
+
+                                <span class="text-2xl">🎬</span>
+
+                                <div>
+                                    <h3 class="font-semibold" >Reels Bundles</h3>
+                                    <p class="text-xs text-gray-400">Viral Reels Collection</p>
+                                </div>
+
+                            </a>
+
+                            <a href="packs.html" class="flex items-center gap-4 px-6 py-4 hover:bg-white hover:text-black transition">
+
+                                <span class="text-2xl">📦</span>
+
+                                <div>
+                                    <h3 class="font-semibold">Packs</h3>
+                                    <p class="text-xs text-gray-400">Editing & Digital Packs</p>
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <li>
+                    <a href="about.html" class="hover:text-gray-300 duration-300">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="hover:text-gray-300 duration-300">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Mobile Button -->
+            <button id="menuBtn"
+                class="lg:hidden text-3xl">
+                ☰
+            </button>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+            class="hidden lg:hidden pb-6">
+
+            <ul class="flex flex-col gap-2 bg-black/95 rounded-2xl border border-white/10 overflow-hidden">
+
+                <li>
+                    <a href="index.html"
+                        class="block px-6 py-4 hover:bg-white hover:text-black transition">
+                        🏠 Home
+                    </a>
+                </li>
+
+                <li>
+
+                    <button id="catBtn"
+                        class="w-full flex justify-between items-center px-6 py-4 hover:bg-white hover:text-black transition">
+
+                        Categories
+
+                        <span id="catArrow">▼</span>
+
+                    </button>
+
+                    <div id="catMenu" class="hidden bg-white/5">
+
+                        <a href="courses.html"
+                            class="block px-10 py-3 hover:bg-white hover:text-black transition">
+                            📚 Courses
+                        </a>
+
+                        <a href="reels.html"
+                            class="block px-10 py-3 hover:bg-white hover:text-black transition">
+                            🎬 Reels Bundles
+                        </a>
+
+                        <a href="packs.html"
+                            class="block px-10 py-3 hover:bg-white hover:text-black transition">
+                            📦 Packs
+                        </a>
+
+                    </div>
+
+                </li>
+
+                <li>
+                    <a href="about.html"
+                        class="block px-6 py-4 hover:bg-white hover:text-black transition">
+                        ℹ️ About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html"
+                        class="block px-6 py-4 hover:bg-white hover:text-black transition">
+                        📞 Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+
+    if (menuBtn.innerHTML === "☰") {
+        menuBtn.innerHTML = "✕";
+    } else {
+        menuBtn.innerHTML = "☰";
+    }
+});
+
+const catBtn = document.getElementById("catBtn");
+const catMenu = document.getElementById("catMenu");
+const catArrow = document.getElementById("catArrow");
+
+catBtn.addEventListener("click", () => {
+    catMenu.classList.toggle("hidden");
+
+    if (catArrow.innerHTML === "▼") {
+        catArrow.innerHTML = "▲";
+    } else {
+        catArrow.innerHTML = "▼";
+    }
+});
+</script>
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero min-h-screen flex items-center pt-32 pb-20">
+
+<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+
+<!-- Left -->
+
+<div>
+
+<span class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-white/10 bg-white/5 text-gray-300 text-sm mb-8">
+
+⚡ Premium Digital Marketplace
+
+</span>
+
+<h1 class="text-5xl lg:text-7xl font-extrabold leading-tight">
+
+Everything
+
+<br>
+
+You Need
+
+<br>
+
+<span class="text-gray-400">
+
+In One Store
+
+</span>
+
+</h1>
+
+<p class="mt-8 text-gray-400 text-lg leading-9 max-w-xl">
+
+Discover premium Courses, AI Tools,
+Reels Bundles, Graphic Design Assets,
+Programming Resources, eBooks,
+Templates and much more.
+
+Everything delivered instantly after purchase.
+
+</p>
+
+<div class="mt-10">
+
+<a href="#categories"
+
+class="inline-block px-8 py-4 rounded-xl border border-white hover:bg-white hover:text-black duration-300 font-semibold">
+
+Explore Categories
+
+</a>
+
+</div>
+
+<div class="grid grid-cols-3 gap-8 mt-16">
+
+<div>
+
+<h2 class="text-4xl font-bold">
+
+500+
+
+</h2>
+
+<p class="text-gray-500">
+
+Products
+
+</p>
+
+</div>
+
+<div>
+
+<h2 class="text-4xl font-bold">
+
+1000+
+
+</h2>
+
+<p class="text-gray-500">
+
+Customers
+
+</p>
+
+</div>
+
+<div>
+
+<h2 class="text-4xl font-bold">
+
+24/7
+
+</h2>
+
+<p class="text-gray-500">
+
+Support
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Right -->
+
+<div>
+
+<div class="glass rounded-3xl p-8 shadow-2xl">
+
+<img
+
+src="hero.png"
+
+class="rounded-2xl w-full h-[320px] object-cover"
+
+alt="Hero">
+
+<div class="grid grid-cols-2 gap-5 mt-8">
+
+<div class="glass rounded-xl p-5">
+
+<div class="text-3xl">
+
+📚
+
+</div>
+
+<h3 class="font-semibold mt-3">
+    <a href="courses.html" class="hover:text-blue-500 transition">
+        Courses
+    </a>
+</h3>
+
+<p class="text-gray-400 text-sm mt-2">
+
+Professional Learning Resources
+
+</p>
+
+</div>
+
+<div class="glass rounded-xl p-5">
+
+<div class="text-3xl">
+
+🎬
+
+</div>
+
+<h3 class="font-semibold mt-3">
+    <a href="reels.html " class="hover:text-blue-500"  >Reels</a>
+</h3>
+
+<p class="text-gray-400 text-sm mt-2">
+
+Viral Content Bundles
+
+</p>
+
+</div>
+
+<div class="glass rounded-xl p-5">
+
+<div class="text-3xl">
+
+🤖
+
+</div>
+
+<h3 class="font-semibold mt-3">
+
+<a href="aitools.html" class="hover:text-blue-500">AI Tools</a>
+
+</h3>
+
+<p class="text-gray-400 text-sm mt-2">
+
+Boost Productivity
+
+</p>
+
+</div>
+
+<div class="glass rounded-xl p-5">
+
+<div class="text-3xl">
+
+🎨
+
+</div>
+
+<h3 class="font-semibold mt-3">
+
+<a href="assets.html" class="hover:text-blue-500">Image Prompts</a>
+
+</h3>
+
+<p class="text-gray-400 text-sm mt-2">
+
+Image Editing Prompts
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+
+<section id="categories" class="py-24 bg-black">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<!-- Heading -->
+
+<div class="text-center mb-16">
+
+<span class="text-gray-400 uppercase tracking-[6px] text-sm">
+
+Our Categories
+
+</span>
+
+<h2 class="text-5xl font-bold mt-4">
+
+Browse Premium Collections
+
+</h2>
+
+<p class="text-gray-500 mt-5 max-w-2xl mx-auto">
+
+Choose your favorite category and explore premium digital
+products with instant delivery.
+
+</p>
+
+</div>
+
+<!-- Cards -->
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+<!-- Card -->
+
+<div class="glass rounded-3xl p-8 hover:-translate-y-3 duration-300 border border-white/10 hover:border-white">
+
+<div class="text-5xl">📚</div>
+
+<h3 class="text-2xl font-semibold mt-6">
+<a href="courses.html" class="hover:text-blue-500">
+    Courses
+</a>
+
+</h3>
+
+<p class="text-gray-400 mt-3">
+
+Premium AI, Programming,
+Marketing & Business Courses.
+
+</p>
+
+</div>
+
+<!-- Card -->
+
+<div class="glass rounded-3xl p-8 hover:-translate-y-3 duration-300 border border-white/10 hover:border-white">
+
+<div class="text-5xl">🎬</div>
+
+<h3 class="text-2xl font-semibold mt-6">
+
+<a href="reels.html" class="hover:text-blue-500">Reels Bundles</a>
+
+</h3>
+
+<p class="text-gray-400 mt-3">
+
+Instagram, TikTok & YouTube
+viral reels collections.
+
+</p>
+
+</div>
+
+<!-- Card -->
+
+<div class="glass rounded-3xl p-8 hover:-translate-y-3 duration-300 border border-white/10 hover:border-white">
+
+<div class="text-5xl">🤖</div>
+
+<h3 class="text-2xl font-semibold mt-6">
+
+AI Tools
+
+</h3>
+
+<p class="text-gray-400 mt-3">
+
+ChatGPT prompts,n
+AI resources & automation.
+
+</p>
+
+</div>
+
+<!-- Card -->
+
+<div class="glass rounded-3xl p-8 hover:-translate-y-3 duration-300 border border-white/10 hover:border-white">
+
+<div class="text-5xl">🎨</div>
+
+<h3 class="text-2xl font-semibold mt-6">
+
+Image Prompts
+
+</h3>
+
+<p class="text-gray-400 mt-3">
+
+Image Editing Prompts
+
+
+</p>
+
+</div>
+
+<!-- Card -->
+
+
+</div>
+
+</div>
+
+</section>
+

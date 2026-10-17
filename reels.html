@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link  rel="icon" type="image/png" href="logo1.png">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reels Bundles | Abdullah's Store</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#000;
+color:#fff;
+overflow-x:hidden;
+}
+
+.glass{
+
+background:rgba(255,255,255,.04);
+backdrop-filter:blur(16px);
+-webkit-backdrop-filter:blur(16px);
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<nav class="fixed top-0 left-0 w-full z-50 glass">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="flex justify-between items-center h-20">
+
+
+<a href="index.html" class="flex items-center gap-4">
+
+<img src="logo.png"
+class="w-14 h-14 rounded-full object-cover border border-white">
+
+
+<div>
+
+<h1 class="text-2xl font-bold">
+Abdullah's Store
+</h1>
+
+<p class="text-sm text-gray-400">
+Premium Digital Marketplace
+</p>
+
+</div>
+
+</a>
+
+
+
+<ul class="hidden lg:flex gap-10">
+
+<li>
+<a href="index.html" class="hover:text-gray-300">
+Home
+</a>
+</li>
+
+
+<li class="relative group">
+
+<button class="hover:text-gray-300">
+Categories
+</button>
+
+
+<div class="absolute left-0 mt-5 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+
+
+<div class="bg-black border border-white/10 rounded-2xl overflow-hidden">
+
+
+<a href="courses.html"
+class="block px-6 py-4 hover:bg-white hover:text-black">
+📚 Courses
+</a>
+
+
+<a href="reels.html"
+class="block px-6 py-4 hover:bg-white hover:text-black">
+🎬 Reels Bundles
+</a>
+
+
+<a href="packs.html"
+class="block px-6 py-4 hover:bg-white hover:text-black">
+📦 Packs
+</a>
+
+
+</div>
+
+</div>
+
+</li>
+
+
+<li>
+<a href="about.html" class="hover:text-gray-300">
+About
+</a>
+</li>
+
+
+<li>
+<a href="contact.html" class="hover:text-gray-300">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<section class="pt-40 pb-20">
+
+<div class="max-w-7xl mx-auto px-6 text-center">
+
+
+<p class="uppercase tracking-[8px] text-gray-500">
+Premium Content
+</p>
+
+
+<h1 class="text-6xl font-black mt-5">
+Explore Reels Bundles
+</h1>
+
+
+<p class="text-gray-400 text-lg mt-6">
+Download premium viral reels collections.
+</p>
+
+
+<input id="search"
+type="text"
+placeholder="Search your reels bundle..."
+
+class="mt-12 w-full max-w-2xl px-6 py-5 rounded-2xl bg-white/5 border border-white/10 outline-none text-white">
+
+
+</div>
+
+</section>
+
+
+
+<section class="pb-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+
+<div id="reelsBox"
+class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<footer class="border-t border-white/10 py-10 text-center">
+
+<p class="text-gray-500">
+© 2026 Abdullah's Store. All Rights Reserved.
+</p>
+
+</footer>
+
+
+
+<script>
+
+
+const reels = [
+
+
+"AI Baby Reels Bundle",
+
+"AI Cat Long Videos Reels Bundle",
+
+"AI Glass Reels Bundle",
+
+"AI Talking Objects Reels Bundle",
+
+"Viral Hooks Reels Bundle",
+
+"Mom Life Reels Bundle",
+
+"Art and Craft Reels Bundle",
+
+"Aesthetic Boss Babe Reels Bundle",
+
+"Aesthetic Pink Videos Reels Bundle",
+
+"Aesthetic Travel Videos Reels Bundle",
+
+"Animal Reels Bundle",
+
+"Car Reels Bundle",
+
+"Faceless Aesthetic Reels Bundle",
+
+"Fitness Reels Bundle",
+
+"Luxury for Edits Reels Bundle",
+
+"MMU Essentials Reels Bundle",
+
+"Motivational Reels Bundle",
+
+"Nature Reels Bundle",
+
+"Rich / Luxury Reels Bundle",
+
+"Travel Videos Reels Bundle",
+
+"Anime Reels Bundle",
+
+"Mini AI Worker Reels Bundle",
+
+"Trading Reels Bundle",
+
+"AI Dance Reels Bundle",
+
+"Luxury Cars Reels Bundle",
+
+"Ronaldo Reels Bundle",
+
+"Cricket Reels Bundle",
+
+"PUBG Reels Bundle",
+
+"Free Fire Reels Bundle",
+
+"IShowSpeed Reels Bundle",
+
+"Skeleton Reels Bundle",
+
+"AI Doctor Reels Bundle",
+
+"AI Hulk Reels Bundle",
+
+"Monkey Vlogs Reels Bundle",
+
+"Gym Reels Bundle",
+
+"AI Bed Reels Bundle",
+
+"Gadgets Reels Bundle",
+
+"Kapil Sharma Reels Bundle",
+
+"Islamic Reels Bundle",
+
+"Gym Exercise Guide Reels Bundle",
+
+"Study Reels Bundle",
+
+"Emotional Reels Bundle",
+
+"Funny Fails Reels Bundle",
+
+"Satisfying Reels Bundle",
+
+"5-Minute Crafts Reels Bundle",
+
+"Space Content Reels Bundle",
+
+"Hindi Riddles Reels Bundle",
+
+"AI Miniature Reels Bundle",
+
+"Dr. Israr Reels Bundle",
+
+"Podcast Reels Bundle",
+
+"AI Sportsman Reels Bundle",
+
+"Stickman Reels Bundle",
+
+"AI Stories Reels Bundle",
+
+"Skeleton Insta Posts Reels Bundle",
+
+"Car Craft Reels Bundle",
+
+"Night Nature Reels Bundle",
+
+"Dr. Skeleton Reels Bundle",
+
+"Stickman Funny Animation Reels Bundle",
+
+"Cooking Reels Bundle",
+
+
+];
+
+
+let box=document.getElementById("reelsBox");
+
+
+reels.forEach(item=>{
+
+
+box.innerHTML += `
+
+<div class="glass rounded-3xl p-8 hover:-translate-y-3 duration-300">
+
+    <div class="text-5xl">
+        🎬
+    </div>
+
+    <h2 class="text-2xl font-bold mt-6">
+        ${item}
+    </h2>
+
+    <p class="text-gray-400 mt-4">
+        Premium viral reels bundle with high quality content.
+    </p>
+
+    <div class="mt-6">
+        <span class="inline-block px-4 py-2 rounded-xl bg-green-500/20 border border-green-400/40 text-green-400 font-bold text-lg">
+            💰 Price: Rs. 350
+        </span>
+    </div>
+
+    <a href="https://wa.me/923006234728?text=I%20Want%20To%20Buy%20${encodeURIComponent(item)}"
+    target="_blank"
+    class="inline-block mt-5 px-6 py-3 rounded-xl bg-white text-black font-semibold hover:scale-105 duration-300">
+
+        Buy Now
+
+    </a>
+
+</div>
+
+`;
+
+});
+
+document.getElementById("search").addEventListener("keyup", function () {
+
+    let value = this.value.toLowerCase();
+
+    document.querySelectorAll(".glass").forEach(card => {
+
+        if (card.innerText.toLowerCase().includes(value)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
+
+
+</script>
+
+
+</body>
+</html>

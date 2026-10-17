@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link  rel="icon" type="image/png" href="logo1.png">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Courses | Abdullah's Store</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:#000;
+color:#fff;
+overflow-x:hidden;
+
+}
+
+
+.glass{
+
+background:rgba(255,255,255,.04);
+
+backdrop-filter:blur(16px);
+
+-webkit-backdrop-filter:blur(16px);
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- ================= NAVBAR ================= -->
+
+
+<nav class="fixed top-0 left-0 w-full z-50 glass">
+
+
+<div class="max-w-7xl mx-auto px-6">
+
+
+<div class="flex justify-between items-center h-20">
+
+
+
+<a href="index.html" class="flex items-center gap-4">
+
+
+<img src="logo.png"
+
+class="w-14 h-14 rounded-full object-cover border border-white">
+
+
+<div>
+
+<h1 class="text-2xl font-bold">
+
+Abdullah's Store
+
+</h1>
+
+
+<p class="text-sm text-gray-400">
+
+Premium Digital Marketplace
+
+</p>
+
+
+</div>
+
+
+</a>
+
+
+
+
+
+<ul class="hidden lg:flex gap-10">
+
+
+<li>
+
+<a href="index.html"
+class="hover:text-gray-300">
+
+Home
+
+</a>
+
+</li>
+
+
+
+<li class="relative group">
+
+
+<button class="hover:text-gray-300">
+
+Categories
+
+</button>
+
+
+
+<div class="absolute left-0 mt-5 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+
+
+<div class="bg-black border border-white/10 rounded-2xl overflow-hidden">
+
+
+<a href="courses.html"
+class="block px-6 py-4 hover:bg-white hover:text-black">
+
+📚 Courses
+
+</a>
+
+
+<a href="reels.html"
+class="block px-6 py-4 hover:bg-white hover:text-black">
+
+🎬 Reels Bundles
+
+</a>
+
+
+<a href="packs.html"
+class="block px-6 py-4 hover:bg-white hover:text-black">
+
+📦 Packs
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</li>
+
+
+
+<li>
+
+<a href="about.html"
+class="hover:text-gray-300">
+
+About
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="contact.html"
+class="hover:text-gray-300">
+
+Contact
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+
+</div>
+
+
+</div>
+
+
+</nav>
+
+
+
+
+
+<!-- ================= HERO ================= -->
+
+
+<section class="pt-40 pb-20">
+
+
+<div class="max-w-7xl mx-auto px-6 text-center">
+
+
+
+<p class="uppercase tracking-[8px] text-gray-500">
+
+Premium Learning
+
+</p>
+
+
+
+<h1 class="text-6xl font-black mt-5">
+
+Explore Courses
+
+</h1>
+
+
+
+<p class="text-gray-400 text-lg mt-6">
+
+Learn premium skills with high quality digital courses.
+
+</p>
+
+
+
+<input id="search"
+
+type="text"
+
+placeholder="Search your course..."
+
+class="mt-12 w-full max-w-2xl px-6 py-5 rounded-2xl bg-white/5 border border-white/10 outline-none text-white">
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= COURSES ================= -->
+
+
+<section class="pb-24">
+
+
+<div class="max-w-7xl mx-auto px-6">
+
+
+
+<div id="courseBox"
+
+class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+<footer class="border-t border-white/10 py-10 text-center">
+
+
+<p class="text-gray-500">
+
+© 2026 Abdullah's Store. All Rights Reserved.
+
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<script>
+
+
+
+const courses = [
+
+
+"YouTube Automation Course By Huzaifa ❤",
+
+"Demand Curve - Your Startup's Growth Operating System",
+
+"Maria Wendt - I Love Money And Money Loves Me",
+
+"Dan Henry – Get Clients University Monthly Live Workshop",
+
+"Adi Singh – Davinci Resolve Video Editing Masterclass",
+
+"0xFramer — AI Cartoon Hero Creation Course",
+
+"Sora Masterclass Cinematic Video Production with AI",
+
+"AI for Marketing – Growth School",
+
+"Amazon & AI Passive Income Strategy",
+
+"TikTok Automation Batch 19 By Mohsin Ali",
+
+"Iman Gadzhi – Pathway to Profit's ❤",
+
+"How To Earn $10k/month From Facebook Monetization",
+
+"AI & Digital Marketing Training In Pakistan",
+
+"Andreis Ohneisser – AI Visual's Mastery",
+
+"AI Islamic Youtube Channel",
+
+"AI Guy TikTok Monetization Course",
+
+"YouTube For Business - Stephanie Kase",
+
+"AI & Digital Marketing Live Training By DMT Xtreme",
+
+"Latest Video Editing Cohort 2025 By Manav Visuals",
+
+"Logo Designing Course By Arslan Ali",
+
+"YouTube 18 Days Formula By Junaid YT ❤",
+
+"Tiktok Faceless Mastery",
+
+"Laurel Portie - Expert Ad Coaching For 7 Dollar Ads",
+
+"Hamza Facebook Ads",
+
+"Coach K Teaches Values-Driven Leadership",
+
+"Instagram Shiksha Masterclass Course",
+
+"Mastering Excel Become a Power User",
+
+"AI Marketing Masterclass Ultimate Roadmap For Marketers",
+
+"Facebook Ads Batch #3 By Fawaz Ahmed",
+
+"Youtube Pro Academy",
+
+"Lik Foon - IG Profits Blueprint",
+
+"Photoshop Compositing Basics Tips Every New User Needs to Know",
+
+"Hannah Pippins - Roadmap Exclusive",
+
+"The Ultimate Guide to Blogging with AI",
+
+"The 250$ Marketing Plan with Jasmine Star",
+
+"Mastering Google Calendar Mastering Your Day",
+
+"The 2025 Thumbnail Design Masterclass",
+
+"YouTube Automation Course By Sajjad Hussain SEBT ISkills",
+
+"Master Gorgeous UI Design ❤",
+
+"Bobbi Brown Teaches Makeup and Beauty",
+
+"Next-Level Self Portraits Shoot Like a Pro",
+
+"Ezra Firestone - Smart Ecommerce",
+
+"Blindusk Animated Sketchs",
+
+"Flat Pack FX – Animation Master",
+
+"Simo Ahava – Google Analytics 4 in Big Query",
+
+"Master Image Editing Unique Lightroom Photoshop Shortcuts",
+
+"Trader Dale - Smart Money Course",
+
+"How to Make AI Videos Mastering AI Text-to-Video Creation",
+
+"Creator Secrets Faceless AI Niche Channels Automation ❤",
+
+"Dr José Prabhu J Courses",
+
+"Billy Sticker - Agency On Fire Coaching",
+
+"Academy of Animated Art - Compositing for the Lighting Artist",
+
+"Hamza Baig Automation Accelerator",
+
+"Blogging Course",
+
+"Troy Ericson - The Email List Management Certification Program",
+
+"Communication Skills For Success - In Business & In Life",
+
+"Camtasia Mastery Beginner to Pro in Video Editing",
+
+"Academy of Animated Art - Nuke Technical Workshop",
+
+"Tina Lee – Mobile Editing Magic ❤",
+
+"The Blender Bros Design Course",
+
+"Talia Datt Foundr - Social Media Monetization",
+
+"The Branding Journal – The Ultimate Brand Building System",
+
+"Capcut Video Editing for Social Media Reels Shorts Videos",
+
+"Badar Tanveer Trading Course",
+
+"Adi Singh - Video Editing Secrets February 2025",
+
+"(Saddam Kassim) My Secret To Earn RS 50000 Per Month With WordPress",
+
+"Faisal Saleh Hayat FB Ads Course",
+
+"Master Image Editing Unique Lightroom & Photoshop Shortcuts ❤",
+
+"Cyndi Zaweski - Short-Form Storytelling",
+
+"Design Tiny House",
+
+"Amazon AI Passive Income Strategy",
+
+"High Contrast YouTube Thumbnail Youtube Thumbnails that Pop",
+
+"Saravanan Ganesh – Easy Rank and Bank Mini Course",
+
+"Amazon S3 Mastery Bootcamp 2025",
+
+"Daraz Hands-on-Experience Course 2.0",
+
+"Saurav Jain - Facebook Ads Marketing",
+
+"Natalia Raitomaki - Sales Automation System",
+
+"YouTube Automation Full Course By Awais Ecom ❤",
+
+"Capcut Editing Tutorials",
+
+"Malaia Teaches Creating Changes",
+
+"E-commerce Training By Ali Swati",
+
+"Everyday English",
+
+"Digital Income Project - Instagram Blueprint OS",
+
+"Aryan Tripathi Advanced Facebook Ads Course",
+
+"Grant Cardone - Advanced Sales Negotiation Certification",
+
+"15 Million Products",
+
+"Mastering IELTS Writing Task 2 (Achieve Band 7+ in 5 Hours) ❤",
+
+"Steal My Ads – Updated For 2024",
+
+"Marketing Mindset",
+
+"Creating a Portfolio With Django (Beginners)",
+
+"The All-Inclusive WiseDigger Marketing Guides Bundle",
+
+"Mastering Google Docs - Complete Google Docs Course",
+
+"Become a Social Media Design Pro",
+
+"Atlas Forex Trading Course",
+
+"Domestika - 3D Character Modeling for Organic and Hard Surfaces",
+
+"Dave Rekuc (CXL) - Ecommerce Forecasting",
+
+"Stephen Noch and Andrew Bailiff - That Amazon Ads Masterclass ❤",
+
+"Saturn's Ring Multimedia Video Editing",
+
+"Automation With Hadi",
+
+"Master Canva and ChatGPT for Social Media Ads and Content",
+
+"Umair Tiktok Wala - Tiktok Monetization Course Latest Batch",
+
+"Animation for Everyone - Jesse J. Jones",
+
+"Jenna Kutcher – The Podcast Lab + The Content Lab",
+
+"Fiverr Full Course",
+
+"KelbyOne - Fashion Flair Photography",
+
+"Alicia Scott - How To Build A Million Dollar Beauty Brand",
+
+"Abhishek Thumbnail Pro Course ❤",
+
+"Alex Pereira – Faceless Capital",
+
+"Samantha English – Local Business Bootcamp",
+
+"Crypto Course By P4 Provider",
+
+"Master CapCut The Complete Video Editing Course",
+
+"Danny Postma – SEO Blueprint",
+
+"Brendon Burchard - Influencer Pro",
+
+"ChatGPT for Product Management",
+
+"Architectural Lighting Design Essentials",
+
+"Aaron Van - Lighting Food Photography ❤",
+
+"How to Monetize Your Personal Brand",
+
+"Client Hunting Methodology by Soban Tariq Course",
+
+"Learn Pixelmator Pro for Beginners",
+
+"Anastasia Gutnikova – Blog Your Way to $10k",
+
+"Zero to Hero Video Editing",
+
+"15 Real Ways to Monetize Instagram Content in 2025",
+
+"Basic LinkedIn for Beginners",
+
+"Shopify SEO Checklist Complete",
+
+"Craig Campbell - SEO Course",
+
+"PowerPoint Complete Course ❤",
+
+"Greg and Nate – Mastering Comedy Ads",
+
+"AI Workshop By Zubair Trabzada",
+
+"Earn Passive Income By Selling Digital Products",
+
+"E-commerce Training By Ali Swati",
+
+"Dave Kettner - Etsy Profits Generator",
+
+"4-Day Capcut Mobile Mastery Course: From Beginner to Expert",
+
+"Sheikh Sajawal Digital Marketing Course",
+
+"Neeraj Joshi Mutual Funds Basics To Advance Complete Course",
+
+"Forex Strategy PUMPING STATION Trading Software",
+
+"Quick and Easy 60+ Blender Projects For Beginners ❤",
+
+"Saravanan Ganesh – Easy Rank and Bank Mini Course",
+
+"SVG Animation with GreenSock",
+
+"Tharun Speaks Video Editing Updated",
+
+"Mastering Online Income: Selling Digital Products and Services",
+
+"Mind Reader AI Course",
+
+"Python Demonstrations For Practice Course",
+
+"Technical & Fundamental Analysis of Financial Markets",
+
+"Upwork Complete Course",
+
+"YouTube Creator Course By Mr How",
+
+"Beginner Machine Learning in Python + ChatGPT Prize ❤",
+
+"Coffee Maker Product Photography",
+
+"Beverage Photography in Examples",
+
+"FAIZ SMC Trading Course",
+
+"Facebook & Instagram Advertising For Real Estate Agent",
+
+"ChatGPT Complete 2025 Course for Making Money Online",
+
+"TikTok Business Mastery Trends Growth Sales Strategies",
+
+"How to Draw with Organic Forms",
+
+"Magic Behind Advertising Photography",
+
+"Digital Branding - Build a Brand from Zero By Rajeev Mehta",
+
+"YouTube SEO Mastery for YouTube Growth & Automation",
+
+"ChatGPT Complete 2025 Course with Generative AI & Canva",
+
+"Mark Hess - AI Video Thumbnail Secret Code",
+
+"Trading Dominion - Mining For Gold",
+
+"Mastering Adobe Photoshop CC",
+
+"Adsense Arbitrage Course",
+
+"Fractal Flow Pro Trading Strategies Complete Package",
+
+"Filmora Editing Course",
+
+"Risk Management Course",
+
+"Nicola Moors - Brand Voice Baller",
+
+"Adsense Loading ❤",
+
+"Avdhut Sathe Trading Course",
+
+"Waheed Zen Client Hunting",
+
+"Earn 1.5 Lac Per Month Niche and Keyword Research",
+
+"Blogging Course By Abby Viral & Cool Mitra",
+
+"Content Writing Course",
+
+"Alex Pereira – Faceless Capital",
+
+"SEO Complete Guide to Building Amazon Affiliate Sites",
+
+"Trading Mindset Mastery",
+
+"The Ultimate Facebook Marketing Course for Real Estate Professionals",
+
+"Tanner Planes - Faceless Content Mastery 2024 ❤",
+
+"How To Write Blog Posts That Get 500,000 Views 2024",
+
+"Basic Combat Self Defense",
+
+"Matt Par - Quantum Courses",
+
+"Andy Skraga - The Facebook Traffic Blueprint",
+
+"Digital Calligraphy Course",
+
+"Forex Trading Full Course",
+
+"Amazon Ads Course 2024",
+
+"2TB+ Courses Bundle",
+
+"YT Shorts Automation",
+
+"Rachel Harrison - Low-Content Profits Academy ❤",
+
+"Blogging and Content Marketing with Google Blogger",
+
+"Content Writing Course",
+
+"Master Content Creation By Abhi And Niyo",
+
+"Quran Primary Course By Azan Guru",
+
+"Personal Development Course By HBA Services",
+
+"Make Money on YouTube Without Showing Your Face or Recording Videos",
+
+"Etsy Course",
+
+"Daraz Mastery Course By Hamza Ali",
+
+"Adeel Chowdhry – Internet Millionaire Program",
+
+"Google Ads Course ❤",
+
+"Ultimate Sales Mastery Course By ASK Jamal",
+
+"Basics Of Photography",
+
+"Building Fiverr Agency Guide: Become Fiverr Pro & Top Rated",
+
+"Fahim Jameel YouTube Thumbnail Mastery",
+
+"The Airbnb Course",
+
+"Bestselling T-Shirt Design Masterclass With Adobe Photoshop",
+
+"Logo Design Course",
+
+"Monetary Mechanics Course",
+
+"Mastering Video Marketing: Case Studies Approach ❤",
+
+"YouTube Storytelling Beyond Retention",
+
+"Essential Adobe Lightroom Course for Photo Editing",
+
+"Sidra Naseem Google Ads",
+
+"Master AI Prompting By Tech Burner",
+
+"The Freelance Freedom By Mohak",
+
+"Top 4 U Paid Blogging Course",
+
+"Shopify Dropshipping Course",
+
+"Secrets for Landing Your Dream Job",
+
+"100+ AI Islamic Reels Bundle",
+
+"Shahzad Khan Copywriting ❤",
+
+"Learn Programmatic SEO By Preetam Nath 2024",
+
+"Win Clients With Upwork (Upwork Mastery Course)",
+
+"Hammad Kiyani FB Course",
+
+"TikTok Domination: Unlock The Secrets To Viral Growth",
+
+"Public Speaking for Startup Founders and Entrepreneurs",
+
+"Faceless YouTube Automation Channels Made Effortless With AI",
+
+"Facebook Ads Course",
+
+"The 100k Online Writing System - Matt Giaro",
+
+"The YouTube Scriptwriter's Playbook V2 - George Blackman",
+
+"Google My Business SEO Automation: Google Maps Ranking 2025",
+
+"250+GBs Video Editing Pack",
+
+"Whiteboard Animation Mastery",
+
+"Organic Digital Marketing: The Updated Masterclass",
+
+"Unlocking Photoshop Essential Skills in 90 Minutes",
+
+"3D Textured Painting Tutorial",
+
+"Start Your Freelancing Agency",
+
+"MindValley - Mystic Brain",
+
+"Brand Vibe Mastery Social Media Branding Challenge",
+
+"iZotope RX-FabFilter in Adobe Audition Pro Audio Editing",
+
+"Felix Tay – Your First $10k Workshop ❤",
+
+"Fine Art Family Portrait Photography Course",
+
+"The Science-Based Process of Manifesting Your Dreams",
+
+"Mastering Facebook Content Monetization Using AI",
+
+"Price Action Volume Trader – Trading with Market & Volume Profile",
+
+"Guerrilla Marketing Creative Strategies for Business Growth",
+
+"AI for Video Production",
+
+"Pay Per Call Masterclass",
+
+"Midjourney Mastery Hacking Visual Content Creation",
+
+"The Gnomon Workshop - Creating Efficient Digital Doubles for VFX",
+
+"ChatGPT For Developers ❤",
+
+"CapCut Mastery From Beginner to Pro",
+
+"Ben Adkins – Big Money From Small Email List",
+
+"Creating First Project in Revit Architecture",
+
+"Essential Lightroom Course for Beginner to Advanced",
+
+"Adobe Illustrator Course For Beginner",
+
+"Excel for Everyone Essential Skills for Work and Life",
+
+"Jumpstart Python & Gen AI Zero to Hero for Beginners",
+
+"Robert Kiyosaki – Manage Your Money",
+
+"Easy Watercolor Painting Night Sky Galaxy Manga Portrait",
+
+"The Best ChatGPT & AI Course Make Money With AI ❤",
+
+"WordPress No Coding Course",
+
+"Sandeep Maheshwari Life Management Course",
+
+"Ben Adkins - Faceless Digital Business Workshop",
+
+"Ahmad Waqas Local Dropshipping Complete Course",
+
+"Become Shopify Expert By Tahseen",
+
+"45 Fiverr Full Course",
+
+"WordPress Theme Development with Bootstrap in Urdu Hindi",
+
+"Arabic for Beginners A0 Level",
+
+"Essential Canva Course for Graphics Design",
+
+"Learn Canva for Advanced Graphics Design ❤",
+
+"The Complete Photo Editing Masterclass With Adobe and Canva",
+
+"How to Make AI Videos Mastering AI Text-to-Video Creation",
+
+"TOEFL Preparation Speak English with Confidence",
+
+"Shawn Hart - TikShop Secrets",
+
+"iNeuron Job Guaranteed BigData Bootcamp 2.0",
+
+"Sara Finance - Stock Market Course",
+
+"N8N Build Intelligent AI Agent Systems Without Coding",
+
+"IDM AI Agent Course",
+
+"Learn AI Coding, Agents & LLM Applications",
+
+"Jack Roberts - AI Automations by Jack ❤",
+
+"AI Builders Community",
+
+"Growth School - Automate Your Job Flow",
+
+"AI Automation Agency By Andrew Tate",
+
+"Anthony Gallo – The AI Creator Course",
+
+"AI Simplified - Create & Grow Effortlessly",
+
+"AI Builder Club",
+
+"Faceless YouTube Profits Course - Danny Why",
+
+"Build A Bot By Jess Clark",
+
+"AI Agents For Everyone - Complete Masterclass 2025",
+"Build AI Chatbots Without Coding",
+"Build AI Agents and Automate Workflows with n8n",
+"CANVA TO CASH 20",
+"AI Mastery ChatGPT Prompts & MidJourney image Creation",
+"Ultimate Home Automation Using Advance AI Assistant (JARVIS)",
+"Ghostwriter GPT By Dickie Bush",
+"Drake Surach - AI Foundations—a refined collective of AI enthusiasts",
+"Conversational AI Course - AI Voice Chat in Next.js",
+"AI Masterclass ❤",
+"ChatGPT for Freelancing How to Work Smarter and Earn More",
+"Snapchat Automation Course By Emre Can Tas",
+"David Ondrej - New Society Learn How to Make $ Online With Ai Agents",
+"Fabian Marki – AI Automations & Agent Templates",
+"Integromat Automation Course",
+"Build Smart Chatbots & Tools",
+"Romayroh & Views For Income",
+"Anton Voroniuk Ai Courses Courses",
+"Build A WhatsApp AI Agent",
+"Aryan Singh (30 Days Coding Courses) ❤",
+"Complete Web3 Cohort",
+"CodeWithMosh - React 18 for Beginners",
+"Alan & Daniel Walsh - The AI Automator's 2025",
+"Makers School - AI Automation Agency",
+"Build Your Own Dream App With AI",
+"Anthony Gallo - The AI Creator Course",
+"AI VAULT by Mathieu Ofm",
+"That Icelandic Guy - YouTube Studio Masterclass",
+"No Code Mavericks by Justin Brooke",
+"AI Workshop by Zubair Trabzada ❤",
+"AI Prompt CREATORS by Matt Zimmerman",
+"Outreach AI Automation Agents by Magdalena T",
+"AI Automation Society Plus",
+"System And Teams",
+"CashCow Accelerator by Wanner Aarts",
+"Matt C Milne - The Savvy SAAS System",
+"Zarak - Cold Traffic Copywriter 2025",
+"1 Prompt - Eugene Kadzin",
+"Seo Complete Guide to Building Amazon Affiliate sites",
+"Nat Eliason - Build Your Own Apps ❤",
+"Building SaaS with Lovable",
+"Faceless Instagram Marketing Using ChatGPT And Ai_",
+"James Renouf - AI Agents Exposed - Made Us over $100k+ in the 1st 43 days!",
+"AI Agents & Master AI 2025",
+"CapCut Mastery From Beginner to Pro_",
+"AutoCAD 3D From Basics to Advanced Modelling_",
+"Tim Gabe - Framer Zero to Hero_",
+"Mastering Social Media Marketing A Comprehensive Guide_",
+"REDBUBBLE_SEO_TAGGING_",
+"Ultimate Home Automation Using Advance AI Assistant (JARVIS)_ ❤",
+"AI UGC FOR PROS – Scale Ads with AI by Hey Sirio",
+"The Ultimate Git GitHub Crash Course Beginner to Advanced_",
+"24 Sanket Singh _ Learn Backend In NodeJS From Scratch ",
+"Mastering Deep Seek R1",
+"Building & Monetizing Paid Community Via Subscription Model_",
+"Ultimate YouTube Blueprint Proven Tactics Channel Success_",
+"Automating Journalism_",
+"Marketing Automation for Small Businesses & Solopreneurs",
+"The Ultimate AI Agent Course for 247 Appointment Automation_",
+"Social Media Bots with Python_ ❤",
+"BowTiedSystems – Email Espionage_",
+"Learn 3d Animation Using Blender Course_",
+"Let ChatGPT do your ABAP Programming ...",
+"Detyo Bon - Instagram Algorithm Course",
+"Master Canva and ChatGPT for Social Media, Ads With AI ...",
+"DMT- Xtreme Wordpress Course",
+"Creative Brilliance Project Based Professional Photoshop",
+"C++ For Everyone In Easy And Understandable Language_",
+"Learn Python By Coding 10 Projects ...",
+"Python for SEO & Content Marketing _ ❤",
+"Master AI Voice Agents Automate Calls with AI and No-Code",
+"CreatorHQ – The Complete Creator Operating System_",
+"Print on Demand Profits Made Easy with ChatGPT and AI Tools ",
+"REBELWAY - PYTHON FOR HOUDINI ARTIST ",
+"AI-Powered Personal Branding Build Your Brand with AI Tools",
+"Salesforce Development With AI: Cursor, Copilot & Agentforce",
+"Jessie van Breugel - LinkedIn Growth System *",
+"Ai-Basics-Course-By-Sir-Irfan-Malik",
+"cPanel Essentials: Mastering Web Hosting Management (Urdu/Hindi) - *",
+"Python for Data Science and Machine Learning Bootcamp ❤",
+"Marketing Automation for Small Businesses Solopreneurs ",
+"ChatGPT 2025",
+"How to Make AI Agents Without Coding Full Course (n8n + OpenAI) - اردو / हिन्दी",
+"Microsoft Offce 365 (course) Like never before",
+"Adobe Premiere Pro Essentials Beginner_",
+"Complete Web Development by Dr Angela Yu",
+"YouTube SEO Mastery for Powerful YouTube Growth and YouTube Automation (YouTu...",
+"No & Low Code AI Marketing Automation",
+"Git and Github for Visual Studio Code. ❤",
+"0 Join Us",
+"Matt Diamante - Course Bundle_",
+"deep-fakes-and-voice-cloning-masterclass-2-courses-in-1_",
+"YT Shorts Automation",
+"AI Art Generation: 3 in 1 Pack: Midjourney, Dall-e, Leonardo_",
+"Prompt Engineering For Ai Beginners $ Business Users_",
+"FlutterFlow App Beginner No-Code Apps Development (2025)",
+"ChatGPT Competitive Analysis Master AI Market Intelligence",
+"Applied DeepSeek AI 25 Practical Projects for AI Developers_",
+"YOUTUBE AUTOMATION_ ❤",
+"Carly Campbell – Pinterest Strategies 2025_",
+"AI in Action Build a Python Teaching Website from Scratch_",
+"Build Anything With AI Agents - Apps - Games - Assistants_",
+"Professional Logo Production With Artificial Intelligence by",
+"The Complete 2025 UIUX Design Journey with Figma_",
+"DeepSeek Essentials Exploring OpenSource AI for Everyone_",
+"1. Introduction To Computer Programming ",
+"Understanding AI Chatbots A Beginner's Guide",
+"Max Wright - The Success Council_",
+"101 python projects The complete python Course for 2025_ ❤",
+"Lara Acosta – Literally LinkedIn (Cohort 1)",
+"DeepSeek Masterclass: A Complete DeepSeek Zero to Hero",
+"NGINX Web Server from Scratch",
+"The Complete Microsoft Word Course Master Microsoft Word",
+"Introduction to IT_",
+"Wordpress Course",
+"Magic Behind Advertising Photography_",
+"Domain_Fortune_FE_OTOS ...",
+"Creating Viral Short Form Content with Generative AI ",
+"ChatGPT For Google Blogger Start Blogging with SEO ... ❤",
+"AI_Video_Thumbnail_Secret_Code",
+"Design User Interface for LinkedIn & Amazon with Figma ...",
+"1 - Introduction ...",
+"Generative AI for .NET Developers with Azure AI Services ...",
+"Using Generative AI across the Marketing Lifecycle ",
+"ChatGPT: Complete 2025 Course for Making Money online with Generative & Canva ...",
+"Web Design Masterclass ",
+"Create AI ChatBots For your Business ",
+"Android Studio Productivity Masterclass",
+"Texture Lab the complete course material creation _ ❤",
+"Mastering YouTube Content Creation By Prof. Nasir Arfat",
+"DMT- Xtreme Wordpress Course",
+"Adobe Premiere Pro Essentials Beginner",
+"Umar Tazkeer Google Ads Course - (Certified Advanced Course)",
+"Product Animation & Visualization Course",
+"CBT Nuggets - Ubuntu Linux Server Series Training Videos Course",
+"Basic to Advance Adobe Animate Course",
+"ChatGPT & Midjourney Content Creation! Sell It On Shopify",
+"- Pathon - Learn Django Framework Online in Hindi",
+"e-commerce-photography-with-iphone-LP ❤",
+"Self Web Hosting at Home in Ubuntu Linux",
+"Canva for Social Media & Ads Create selling pics with Canva",
+"ChatGPT Prompt Playbook: Mastering AI Conversations In 2025",
+"Android Studio Productivity Masterclass",
+"Build Editable, Reusable Digital Product Box Mockups Using Photoshop & Illustrator",
+"Adobe Premiere Pro CC For Video Editing - Novice to Expert",
+"Bootstrap Responsive Template Design Tutorial in Hindi - Urdu",
+"Tech (t)",
+"Mastering Facebook Content Monetization Using AI",
+"Mastering Generative AI: Projects using OpenAI and LangChain ❤",
+"Self-Guided Learning with ChatGPT For Beginners",
+"Instagram Profits Blueprint Masterclass + Bonuses",
+"Chat GPT & Flutter: Build Smart Chatbots for Android & iOS",
+"Jeff Su - Workspace Academy",
+"Chatbot Development Course: Build AI Chatbots without Coding",
+"ChatGPT For Educators, Enhance Your Teaching With Ai",
+"Basic to Advance Computer Course",
+"Professional Voice Over Course In Urdu",
+"UX UI Design Process and Principles",
+"Everyone Can Build a Twitter Audience ❤",
+"WordPress for Beginners Create Your Own WordPress Website",
+"Introduction to AutoCAD -Emphasis on Design (Windows)",
+"Build AI Chatbots, SAAS Apps [AI Automation Agency + NoCode]",
+"Chatbot Development Course: Build AI Chatbots without Coding",
+"Create and Sell VPS, RDP and Proxy Service (Urdu / Hindi) .",
+"Video Editing & Animation By Miss Sehrish",
+"One Page Website with Canva and Chat GPT",
+"Using Generative AI in Software Automation Testing",
+"The Complete Guide to Effective Communication Skills",
+"ChatGPT for Software Developers - ❤",
+"IOS App Development",
+"Build laravel apps fast with blueprint",
+"Growth School – SEO At Scale Course",
+"Tiktok Monitization Cource By Mohsin Ali",
+"Reverse Keyword Rank",
+"Software/App/Game Development",
+"500 TB Data(1)",
+"Python for SEO & Content Marketing .",
+"Prompt Engineering for Developers - Google Drive google.",
+"Ryan Lee - Second Act Bootcamp - Google Drive google. ❤",
+"Copilot with Microsoft 365 Lead Your Industry with AI Power - Google Drive go...",
+"LinkedIn Marketing Building Brands and Personal Presence - Google Drive go...",
+"Learn Git GitHub and GitHub Actions google.",
+"DSA- Data Structures and Algorithms",
+"Microsoft Advertising 101 Learn Everything .",
+"Mastering Custom Chatbots with Assistants API and Voiceflow - Google Drive...",
+"Python 37 - Programming Language Basics",
+"PowerPoint - Microsoft PowerPoint From Basic to Advanced",
+"Learn Filmora Video Editing Masterclass From Beginner to Pro",
+"Revit Expert for Experienced BIM Modelers and Coordinators ❤",
+"Tools to Shape a secure Learning Environment",
+"AWS Certified Developer - Associate",
+"Visual Studio Code Ultimate Guide",
+"AI for Bloggers SEO, Content Writing & Optimization",
+"GBP (Google Business Profile) Verification Method",
+"Alex Myatt - Copy Career Accelerator .",
+"PYTHON FOR TRADERS MASTERCLASS .",
+"eCommerce Website",
+"Software Development",
+"GAME DEVELOPMENT WITH CONSTRUCT 23 - MASTER COURSE IN HINDI ❤",
+"introduction to computer programming -Urdu",
+"Wordpress Course",
+"Python - The Complete Bootcamp",
+"The Complete Computer Forensics Course CFCT+ PRO CFIR DFIR",
+"The Ultimate Filmora Video Editing Course Beginner to Pro",
+"Mastering AI Chatbots From Voiceflow, StackAI, and Zapier",
+"Master AI-Powered Chatbots, 247 Appointment Booking with AI",
+"9 iNeuron.ai - Be A Devops Pro",
+"Youtube Professional Course By Al-Suffa Online",
+"15 Mern Stack Hindi course By Love Babar ❤",
+"Certified Kubernetes Security Specialist Masterclass",
+"Artificial Intelligence & ChatGPT for Cyber Security 2025",
+"AI for CyberSecurity with ChatGPT Automate Security Defense",
+"Masters in Ethical Hacking with Android",
+"Cybersecurity and Ethical Hacking in Hindi (हिन्दी)",
+"Web-hacking : Become Professional Web Pentester_",
+"Linux_for_Ethical_Hackers_(Kali_Linux_Tutorial)",
+"Web Hacking For Beginners_",
+"Learn Ethical Hacking Beginner to Advanced 2025_",
+"AI for CyberSecurity with ChatGPT Automate Security Defense_ ❤",
+"Complete Ethical Hacking Bootcamp Zero to Mastery_",
+"1. Blackhat Exclusive Course_",
+"K7 Total Security Complete Course Best Antivirus ",
+"Bug Bounty Hunting Full Course",
+"7ASecurity - Hacking Modern Web Apps_",
+"Ethics in Cybersecurity_",
+"Learn Ethical Hacking From Scratch google.",
+"The Ultimate Dark Web, Anonymity, Privacy & Security Course",
+"Wi_Fi_Hacking_ Penetration_and_Security_of_Wireless_Networks_Full @...",
+"HackTheBox & TryHackMe- Cyber Security Upskilling Platforms ❤",
+"termux comeplete course in urdu by @HackingWithAHM7",
+"Ethical Hacking The most Advanced level Nmap",
+"Cyber Twinkle Mastering Kali Linux for Ethical Hackers_",
+"Ethical Hacking Tutorial (Hindi) - Full Course Module CEH v 10 - Theory & Pra...",
+"Start Kali Linux with Ethical Hacking and Penetration Testing 2024.mp4",
+"live-camera-hacking",
+"The Complete Ethical Hacking Course_",
+"Complete Ethical Hacking Course Go From Zero to Hero",
+"advance class about android hacking ",
+"AHC Course By AndyHook ❤",
+"Complete Ethical Hacking Masterclass Go from Zero to Hero",
+"React JS",
+"Tricks",
+"Carding Combo Courses",
+"Hacking Android & Social Engineering Complete Course",
+"Learn Reverse Engineering By Taking Apart Android Games .",
+"RDP Creating And Using",
+"Real world of Website hacking and penetration Testing",
+"APK Modding Course ❤",
+"Websites Hacking",
+"The Complete Android Ethical Hacking Practical Course",
+"Cyber Security Course",
+"Python Full Course Basic to Advance",
+"Learn Social Engineering From Scratch",
+"1. Blackhat Exclusive Course",
+"Instagram Hacking",
+"Facebook Unlimited Accounts",
+"ahmeddos ❤",
+"Web Coding",
+"Learn Ethical Hacking and Penetration Testing EHPT+",
+"ETHICAL HACKING WITH PYTHON AND KALI LINUX",
+"Ddos",
+"python course",
+"Call Spoofing",
+"LINUX BASIC",
+"Makhaarij - An Online Tajweed Course",
+"60 Day Youtube Monetization Blueprint ❤",
+"YouTube Automation Tutorial & Master Class 2024 - 25",
+"Web Development Course",
+"Followers To Clients: Instagram Marketing + Lead Generation",
+"Exploring The DarkWeb ALL LINKS REVEAL",
+"Whatsapp Automation: Whatsapp Bots Using Python & Twilio",
+"Crafting Comics Using Custom GPT",
+"Complete AI WordPress Creation Course",
+"Websites Hacking",
+"Learn Reverse Engineering By Taking Apart Android Games",
+"Real world of Website hacking and penetration Testing ❤",
+"The Complete Android Ethical Hacking Practical Course",
+"Cyber Security Course",
+"Hacking Android & Social Engineering Complete Course",
+"Python Full Course Basic to Advance",
+"Carding Combo Courses",
+"How To Study Phyton And Why",
+"1. Blackhat Exclusive Course",
+"RDP Creating And Using",
+"Instagram Hacking",
+"Facebook Unlimited Accounts ❤",
+"ahmeddos",
+"Web Coding",
+"ETHICAL HACKING WITH PYTHON AND KALI LINUX",
+"Ddos",
+"python course",
+"Call Spoofing",
+"LINUX BASIC",
+"MAKE MONEY FROM HOME WRITING WORDS (Copywriting Course)",
+"Learn Adobe After Effect with Motion Graphics and Animation",
+"Most ADVANCED MASTERMIND & Technical Local $EO Course Ever Created ❤",
+"Fiverr Pro Online Course 2024 - Become a Fiverr Pro",
+"Mastering the Growth Mindset",
+"Microsoft Excel - Excel Course For Beginners By Web Oral",
+"Viral TikTok & YouTube Shorts ChatGPT & CapCut Mastery By Passive Income Gen Z",
+"Creating Viral Short Form Content with Generative AI",
+"Launch Your Own Profitable Digital Educational Game Business With Zero Design Skills",
+"Digital Income Project – Content MBA",
+"Christine Carrillo – The 20 Hour CEO",
+"The Way OF Life And Mananging Your Income To Earn",
+"Done But",
+"Make Money with AI-Powered Video Marketing: AI Viral Videos ❤",
+"00000",
+"0 37 E-COMMERCE/Business/Marketing Courses",
+"A (37) Digital Marketing/E-Commerce Courses",
+"Ben Adkins - The $10 Day Local Ad System",
+"Ginny and Laura - 400K Instagram Launches",
+"0 French Trader – Trading Book 2024 -",
+"Google My Business Course in Hindi",
+"iMovie for Mac - Beginner to Advanced Video Editing Course By Masuk Sarker Batista",
+"Writing with Impact Compelling Articles and Letters By Prabh Kirpa Classes",
+"Deep Web- The complete introduction to the hidden web Yassin Marco ❤",
+"Zero to Hero in LangChain Build GenAI apps using LangChain - Google Drive",
+"Mastering AI on AWS Training AWS Certified AI Practitioner By Vivian Aranha",
+"Essential Photoshop Course for Beginner to Advanced By Stephen Koel Soren",
+"Building Your First Simple Game / No Coding Required",
+"eBay Dropshipping Mastery with ChatGPT",
+"How to create a Shopify Store 2024 Beginner guide to setup a Shopify Store & Theme Des...",
+"Figma 2024 Monster Course: Mastering Design & Prototyping",
+"Learn C# from Basic to Advance in Urdu/Hindi",
+"AI & Manual Content Writing, Keyword Research, & Formatting By Tunde Victor Olonitola",
+"42 ETSY COURSE ❤",
+"Python Programming Complete Beginners Course Bootcamp 2024 BY Toppers Bootcamp",
+"♥Build a Creative Portfolio: Showcase, Get Hired, Earn More♥",
+"Full Stack Mobile Application Development - Master Class The Apps Firm",
+"Facebook Ads Marketing - Start Lead Generation Business By Yasir Ahmed, MBA",
+"Youtube Thumbnail By Niraj Kumar Singh",
+"48 Google Ads By Dankash",
+"English Grammar Mystery Course",
+"Ismail Blogger Courses 2024",
+"Jessie van Breugel - LinkedIn Growth System",
+"Landing Page Course ❤",
+"Make Money on YouTube Without Showing Your Face or Recording ANY Videos 2024",
+"Skype Video Presentations By TJ Walker",
+"Mobile Graphic Desiging Course By Al Suffa Online",
+"Wild-Powerpoint-Presentation",
+"Dankash SMM",
+"Youtube Automation Course",
+"22 Search Engine Optimization (SEO) Course",
+"23 Raheem Dawar Upwork Master Class",
+"26 PHOTOGRAPHY COURSE",
+"Exploring The DarkWeb ❤",
+"26 Fiverr Marketing Course",
+"LinkedIn for CEOs By Matt Gray",
+"MS Office Expert Course By Al Suffa Online",
+"23 Become a Cybersecurity Expert: The Ultimate Blackhat Mastery",
+"21 ZOOM MASTERY COURSE",
+"iJaz Ahmed And Abdul Basit Khosa Tiktok And Facebook",
+"Fiverr Latest Course With MrZeff - Huzaifa Saleemi",
+"16 Launch Your LinkedIn",
+"15 Master The Art of Hooks on TikTok and Instagram",
+"14 Ali Abdaal 6 Courses ❤",
+"Online Photography Classes by Dabboo Ratnani",
+"Email Marketing Masterclass",
+"Raheem Dawar Upwork Master Class",
+"Ecommerce Accelerator Course 2024 By Chase Chappell",
+"Learn Mind Reading Secrets",
+"Mastering YouTube Content Creation By Prof. Nasir Arfat",
+"DeepFakes & Voice Cloning",
+"Trading Hub 4.0",
+"Digital Social Marketing Consultant By Tai Lopez",
+"13 Ebay Dropshipping Masterclass ❤",
+"12 Ecommerce Course By Askimtinan 2024",
+"Ecom Hustler By Luqman Walayat",
+"Seo Basics Complete By Zain Raza Private Batch",
+"09 AI Suffa Online Academy) All Courses Bundle 2024",
+"08 Become a Cybersecurity Expert",
+"07 Dropshipping Business Course By Sara Finance",
+"06 Art_of_Hooks_Creator_Course",
+"Translate Your Videos",
+"Graphics Designing Course",
+"Reel Editing Course By Fatima Akbar ❤",
+"04 HAMZA AHMED ADONIS ACADEMY",
+"05 KASHIF MAJEED YOUTUBE",
+"03 Faceless Digital Business",
+"Fountain-Of-Craft Shopify Course",
+"Ecom Surgent",
+"03 70+ Shopify Themes",
+"02 2D Animation Course Advanced",
+"04 75 Professional FUR BABIES PHOTOSHOP ACTIONS V2",
+"05 1000+ Nature Videos Reels",
+"1000+ Web Development ❤",
+"2024 All Premium Softwares",
+"2024 CHATGPT For Google ADS CHATGPT & Google ADS Takeover",
+"Mananging Your Income To Earn More",
+"Video Editing Basic to Advanced Course",
+"English Typing Full Course [AHM COURSES]",
+"2",
+"Facebook Ads",
+"Luqman Wilayat Shopify Dropshipping Full Course",
+"Zero To Hero",
+"Sidra Naseem Digital Marketing Batch #9",
+"Gufran Hadi Zoom Batch ❤",
+"How To Earn money By Adstera",
+"Daniel Kordan – Photo Editing Masterclass Complete Bundle",
+"Youtube Automation By Saad Rashid Full Course",
+"Waqar Zaka complete crypto course",
+"CINEGRAMS - The Full LUT Bundle",
+"Creating a Data Model",
+"Ebook Google Ads",
+"English Grammar Mastery Course",
+"ESP (E-commerce Success Pakistan)",
+"Filmora Editing Course ❤",
+"Trading Courses",
+"Fitness Academy",
+"Free Version Trading Books",
+"Frontrow - Learn Storytelling from Zakir Khan",
+"Graphic X Studio",
+"Gufran Haadi Guest Posting Course",
+"Gulam Ali 3 Days Work Shop",
+"Books Recommend By Iman Gadzhi )",
+"High Income Consultants By Ask Jamal",
+"iNeuron.ai - Cyber Security Masters",
+"Ismail Blogger Paid Blogging And Affiliate Marketing Course ❤",
+"Jumma Reels + Islamic Urdu Quotes",
+"Mobile Graphic Designing Paid Course",
+"Motion Bro Bundle for After Effects - 5000 Transitions",
+"MS OFFICE COURSE",
+"25 Professional Voice Over Course In Urdu",
+"27Paul James – Passive AI Money Machines",
+"30 Master AI Prompting By Tech Burner ❤",
+"Nexiev - Youtube Automation",
+"33 JeremyB - Youtube Growth & Automation Mastery Bundle",
+"Online Digital Marketing Course",
+"Professional Voice Over Course In Urdu",
+"Sheikh Zaheer Abbas Course",
+"Sheryians Coding School - Front-End Domination",
+"Shopify Drop Shipping Course",
+"37 ECOMMERCE OUTSET",
+"Social Media Video Editing With Premiere Pro Canva Filmora",
+"Stock Market course for Beginners a complete guide ❤",
+"StudioPlanet Animated Fonts Bundle",
+"40 eCommerce Website",
+"Talha Reviews Shopify Course",
+"41 Editing With Rachit",
+"LUKE BELMAR — FULL CAPITAL CLUB",
+"World No#1 Blogging Course On Blogspot",
+"Shahid Anwar's Mentorship Program",
+"LEARN HOW TO CREATE TIKTOK VIRAL CONTENT",
+"Crypto Courses",
+"Bilal EDU Latest 3 Courses",
+"TikTok SEO ❤",
+"Alexander Hess – The Landing Page Mastery",
+"Camtasia Mastery: Beginner to Pro in Video Editing",
+"DeepFakes Masterclass",
+"Trading Busters - London Strategy 2024_",
+"Charlie Morgan - E.G",
+"SOCIAL MEDIA MARKETING COURSE",
+"Course By Ask Jamal",
+"Justin Goff - Crypto Training",
+"Magnates Media – The YouTube Business Blueprint",
+"BLOGGING COURSE BY HISHAM SARWAR ❤",
+"EBAY COURSE",
+"Freelance Instagram Influencer Research Job by HBA Services",
+"LWE AMAZON COURSE",
+"Ai Guy Academy",
+"Kazi Zafar Ahmad Sabbir Video Editing",
+"Imran Zayn Youtube Copyright Course",
+"Hayden Hillier Video Editing Course",
+"Stefan Georgi - TikTok Shop Sales Machine",
+"The_Ultimate_Drawing_Course_Beginner_to_Advanced-Jaysen_Batchelor_Quinton-",
+"Become a Side-Gig Copywriter in 6 Days ❤",
+"AI and Automation for Digital Marketers and Content Creators",
+"Tharun Speaks Video Editing [UPDATED]",
+"3D Animation in After Effects",
+"Sartaj Rehman Trading",
+"6 HLD Batch 2 - High Level System Design",
+"The Data Scientist's Toolbox - Moad HANI",
+"David Kollar - Max Conversion Shopify Course",
+"Tinytapes – THE ULTIMATE EDITING PACK BUNDLE",
+"Affiliate Marketing Course - Finance Simple",
+"1 Waqar Zaka School (Latest Updated) ❤",
+"Meredith Cancilla – Dream Big Designer",
+"3 ALPHA CODING BATCH (3.0) By Apna College",
+"4D Copywriting Academy",
+"2 Delta Full Stack Web Development By Apna College",
+"The Complete WordPress Website Course",
+"44 Fountain Of Craft ( Shopify Course)",
+"10 Java with DSA and System Design 2.0",
+"13 Marketing Mindset By Ashutosh Pratihast",
+"1 Waqar Zaka School Private Group Lectures On Crypto 2024",
+"Full Stack Web Development using Python ❤",
+"11 Lana Sova - Rapid Email Mastery Course",
+"3 WordPress Theme Development with Bootstrap in Urdu Hindi",
+"WerkStrich – Zeichnen fürs Handwerk",
+"Vikash Chaudhary",
+"Easy Figma Animations to Stand Out on Social Media",
+"12 LinkedIn Full Course",
+"Laanscapes-Processing.Mega.Bundle",
+"Umer Qureshi Course",
+"Saad Hashmani H University Shopify Course",
+"Amazon Wholesale By Saad Hashmani",
+"EBAY COURSE",
+"David Kollar - Max Conversion Shopify Course",
+"Ultimate Sales Mastery Course By Ask Jamal",
+"HAMZA ALI FACEBOOK ADS COURSES",
+"Chad Salesman",
+"Shopify Dropshipping By Engineering Digital India",
+"shopify complete course by Raza Business School ❤",
+"Ecommerce SEO Bootcamp Course - from $0 to $10000 per Month",
+"IDM Digital Marketing Course",
+"Amazon Business From Pakistan",
+"Amazon FBA Global Selling - Shahid Anwar",
+"Anas Ali Shopify Course",
+"Ecom Surgent",
+"Sidra Naseem Google Ads",
+"Shopify Drop-shipping",
+"Make Money Affiliate Marketing",
+"Facebook Ads Course ❤",
+"Amazon Arbitrage Huzaifa Ali",
+"Amazon Affiliate Marketing",
+"amazon VA Course",
+"Google ads course",
+"Email marketing course",
+"ecomerce business for sale",
+"Daraz Course",
+"Amazon business from Pakistan",
+"Amazon affiliate 2020",
+"Adsense Approval Course ❤",
+"Dhruv Rathee YouTube Blueprint 2024 ❤",
+"Thumbnail Pack",
+"00-Join Our Platform",
+"10 Trending ideas for YT faceless Channel",
+"Deepak Daiya Thumbnail Design",
+"0 to 1% Course By Algrow",
+"Fahim Jameel Youtube Thumbnail Mastery Course",
+"Safeer Shah Youtube Automation Course",
+"YouTube MagnatesMedia",
+"Thumbnail Pro Course",
+"AI Guy Academy | skool.com aiguyacademy ❤",
+"Zapmarts Digital Products Selling Course",
+"Auto Cad (2D & 3D) ❤",
+"Blender 3D Full Course By Shiekh Nafay 2024",
+"Mobile 2d Animation Course",
+"Basic to Advance 2d Adobe Animate Course",
+"PROFESSOR OF HOW 3D Course",
+"3D Animation Course in After Effects",
+"The Complete WordPress Website Course ❤",
+"Landing Page Course",
+"E-commerce Website in Wordpress",
+"Web Application Development",
+"Bootstrap Responsive Templates",
+"Social Media Easy Viral Methods",
+"Learn HTML in one Video",
+"Wordpress Course",
+"WordPress Theme Development with Bootstrap in Urdu Hindi",
+"The Complete Web Developer Bootcamp - Beginner to Expert",
+"Ultimate Web Designer & Developer Course Build 23 Projects",
+"Delta _ Full Stack Web Development ❤",
+"3D Animation Course in After Effects ❤",
+"PROFESSOR OF HOW 3D Course",
+"Basic to Advance 2d Adobe Animate Course",
+"Mobile 2d Animation Course",
+"Blender 3D Full Course By Shiekh Nafay 2024",
+"Auto Cad (2D & 3D)",
+"TinyTapes Ultimate Editing Pack ( ❤",
+"19 GB Editing Assests",
+"The Ultimate Editing Pack Bundle ( Tiny Tapes) (",
+"Video Editing & Animation By Miss Sehrish(",
+"Video Editing Basic (",
+"Vip Assets For Video Editor",
+"Filmora 13 Full Course",
+"Editing With Rachit",
+"Editing Special Bundle",
+"Paper Assets For Video Editing",
+"Tharun Speaks Video Editing [UPDATED] ❤",
+"Iman Gadzhi Editing Pack",
+"The Leveraged Editor - Leveraged Edits by Brett Fully",
+"99.NickZ Editing Course",
+"Aesthetics Of Editing Full Course",
+"BIGGEST PACK(editing)",
+"Hayden Hillier Video Editing Course",
+"USA Truck Dispatcher Full Course",
+"The Ultimate Drawing Course Beginner to Advanced Jaysen Batchelor Quinton",
+"Risk Management",
+"Sales",
+"Public Speaking",
+"Marketing Mindset By Ashutosh Pratihast",
+"Shorts Videos preneur",
+"Wondershare Filmora Editing",
+"Zero to Hero Course",
+"Crypto❤",
+"Trading Busters - London Strategy 2024_",
+"Tech Burner Master AI Prompting ❤",
+"Deepfake Clone Yourself with AI Chat with Your Digital Twin",
+"Learn Rap From Raftaar",
+"WhatsApp Status Download ❤",
+"HOW TO USE BINs",
+"Telegram Invisible Name",
+"WHATSAPP FULL DP NO CROP",
+"CAMERA HACK",
+"HACK ANY DEVICE VIA PDF",
+"Enrollment Method By AHM",
+"GTA Games",
+"Meta Verification (Low Price)",
+"Virtual Number Method By AHM ❤",
+"Moded Games",
+"Accounts Cracking",
+"Best ChatGPT Alternatives (AHM COURSES)",
+"Free Coursera Certificate",
+"CHATGPT 4 FOR FREE",
+"How To Turn An Idea Into Billion Dollar Business Leaked",
+"Amazon Courses",
+"Billy Sticker - Agency On Fire Coaching",
+"Deepfake Clone Yourself with AI Chat with Your Digital Twin | ❤",
+"Tech Burner Master AI Prompting",
+"❤2024 Pre Activated Software",
+"Language Courses",
+"Python Tutorial in Hindi - Great Learning❤",
+"Apna College C++ DSA Course April 2024",
+"ALPHA CODING BATCH (3.0)",
+"Resources to Learn English",
+"❤UX UI DESIGN PROCESS AND PRINCIPLES",
+"Abdul Bari [All Courses]",
+"Adobe Photo Shop Course By Al Suffa Online",
+"Adsense Instant Indexing Method",
+"Cyber Sec And Hacking Course",
+"Advanced Public Speaking Course",
+"Ai Nafay Python",
+"Aleena Raees Spoken English 2024",
+"Amazon Business From Pakistan",
+"AMAZON FBA GLOBAL SELLING COURSE ❤",
+"Anas Ali Shopify (Price_30k PKR)",
+"Best Books For Data Scientists",
+"Andrew Tate - Iron Mind",
+"All Premium Apps",
+"Canva course",
+"Choose Your Enemies Wisely",
+"Fiverr Course By Soban Tariq",
+"How To Create Islamic Videos",
+"Motion Design School - Rigging and Animation in Maya",
+"YouTube Shorts Mastery Course By Kashif Majeed ❤",
+"AMAZON AFFILIATE MARKETING",
+"WordPress Theme Development with Bootstrap",
+"wi-fi-hacking-with-kali❤",
+"The Complete Web Developer Bootcamp - Beginner to Expert",
+"The Best Software Testing Training You Will Ever Get",
+"Ultimate Web Designer & Developer Course Build 23 Projects",
+"video-course-c-from-beginner-to-expert",
+"the-complete-android-developer-course Build 14 Apps",
+"Typography and caligraphi",
+"Zoom mastery course",
+"Kashif Majeed Fiverr Freelancing Course 2024 ❤",
+"Kashif Majeed Blogging MasterClass",
+"Kashif Majeed Facebook Earning Masterclass",
+"Kashif Majeed YouTube Long Videos Mastery",
+"Kashif Majeed YouTube Shorts Mastery",
+"Kashif Majeed Grow Youtube Channel Course (2023-2024)",
+"Kashif Majeed YouTube Seo Masterclass",
+
+
+
+
+];
+
+
+
+
+
+let box=document.getElementById("courseBox");
+
+
+
+courses.forEach(course=>{
+
+
+box.innerHTML += `
+
+<div class="course glass rounded-3xl p-8 hover:-translate-y-3 duration-300">
+
+    <div class="text-5xl">
+        📚
+    </div>
+
+    <h2 class="text-2xl font-bold mt-6">
+        ${course}
+    </h2>
+
+    <p class="text-gray-400 mt-4">
+        Premium course with complete learning resources.
+    </p>
+
+    <!-- Price -->
+    <div class="mt-6">
+        <span class="inline-block px-4 py-2 rounded-xl bg-green-500/20 border border-green-400/40 text-green-400 font-bold text-xl">
+            💰 Price: Rs. 299
+        </span>
+    </div>
+
+    <a href="https://wa.me/923006234728?text=I%20Want%20To%20Buy%20A%20Course"
+        target="_blank"
+        class="inline-block mt-5 px-6 py-3 rounded-xl bg-white text-black font-semibold hover:bg-gray-200 transition">
+
+        Buy Now
+
+    </a>
+
+</div>
+
+`;
+
+
+
+});
+
+
+
+
+
+
+
+document.getElementById("search").addEventListener("keyup",function(){
+
+
+
+let value=this.value.toLowerCase();
+
+
+
+document.querySelectorAll(".course").forEach(card=>{
+
+
+if(card.innerText.toLowerCase().includes(value)){
+
+
+card.style.display="block";
+
+
+}
+
+else{
+
+
+card.style.display="none";
+
+
+}
+
+
+});
+
+
+
+});
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
